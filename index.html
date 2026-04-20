@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creative Lab</title>
+    <meta
+      name="description"
+      content="A static HTML/CSS recreation of the uploaded Figma portfolio reference."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header" id="top">
+        <div class="container nav">
+          <a class="brand" href="#top">Creative Lab</a>
+          <nav class="nav-links" aria-label="Primary">
+            <a href="#work">Projects</a>
+            <a href="#lab">Ideas</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero" aria-labelledby="hero-title">
+          <div class="hero-orb orb-red"></div>
+          <div class="hero-orb orb-teal"></div>
+          <div class="hero-orb orb-yellow"></div>
+
+          <div class="container hero-inner">
+            <div class="hero-copy reveal">
+              <div class="hero-pill">
+                <span class="pill-icon">✦</span>
+                <span>Creative Product Explorations</span>
+              </div>
+
+              <h1 id="hero-title">
+                Hi! I'm Andrea
+                <br />
+                <span>This is where I build, think, and keep learning.</span>
+              </h1>
+
+              <p class="hero-text">
+                Side projects, product ideas, and creative explorations I work on
+                beyond my day job. A playground for thinking differently about
+                digital products.
+              </p>
+
+              <div class="hero-actions">
+                <a class="button button-primary" href="#work">
+                  Explore projects
+                  <span aria-hidden="true">→</span>
+                </a>
+                <a class="button button-secondary" href="#lab">See ideas</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="work" aria-labelledby="work-title">
+          <div class="container">
+            <div class="section-heading reveal">
+              <p class="eyebrow">Side Projects</p>
+              <h2 id="work-title">
+                Things I build
+                <span>after hours</span>
+              </h2>
+            </div>
+
+            <div class="projects-grid">
+              <article class="project-card reveal">
+                <a href="#" class="project-media">
+                  <img
+                    src="https://images.unsplash.com/photo-1686061592689-312bbfb5c055?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+                    alt="Ambient Focus Timer"
+                  />
+                  <div class="project-overlay overlay-red"></div>
+                  <div class="project-badge">↗</div>
+                </a>
+                <div class="project-body">
+                  <div class="tag-row">
+                    <span class="tag tag-red">Side Project</span>
+                    <span class="tag tag-teal">Interaction</span>
+                    <span class="tag tag-gold">AI</span>
+                  </div>
+                  <h3>Ambient Focus Timer</h3>
+                  <p>
+                    A pomodoro app that adapts its interface based on time of day
+                    and your focus patterns, using generative colors and
+                    soundscapes
+                  </p>
+                  <div class="project-meta">
+                    <span>Creator</span>
+                    <span>·</span>
+                    <span>Personal</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="project-card reveal reveal-delay">
+                <a href="#" class="project-media">
+                  <img
+                    src="https://images.unsplash.com/photo-1761305135173-616efff573b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+                    alt="Micro-Journaling for Spotify"
+                  />
+                  <div class="project-overlay overlay-teal"></div>
+                  <div class="project-badge">↗</div>
+                </a>
+                <div class="project-body">
+                  <div class="tag-row">
+                    <span class="tag tag-red">Concept</span>
+                    <span class="tag tag-teal">Music</span>
+                    <span class="tag tag-gold">UX</span>
+                  </div>
+                  <h3>Micro-Journaling for Spotify</h3>
+                  <p>
+                    Concept for tagging emotional context to your listening
+                    history, creating a music-based memory timeline
+                  </p>
+                  <div class="project-meta">
+                    <span>Designer &amp; Builder</span>
+                    <span>·</span>
+                    <span>Weekend Build</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="project-card reveal">
+                <a href="#" class="project-media">
+                  <img
+                    src="https://images.unsplash.com/photo-1763718528755-4bca23f82ac3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+                    alt="Notion Budget Calculator"
+                  />
+                  <div class="project-overlay overlay-gold"></div>
+                  <div class="project-badge">↗</div>
+                </a>
+                <div class="project-body">
+                  <div class="tag-row">
+                    <span class="tag tag-red">Tool</span>
+                    <span class="tag tag-teal">Productivity</span>
+                    <span class="tag tag-gold">Template</span>
+                  </div>
+                  <h3>Notion Budget Calculator</h3>
+                  <p>
+                    Interactive template that brings spreadsheet-like calculations
+                    into Notion with animated visualizations
+                  </p>
+                  <div class="project-meta">
+                    <span>Creator</span>
+                    <span>·</span>
+                    <span>Open Source</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+
+        <section class="section section-muted" id="lab" aria-labelledby="lab-title">
+          <div class="lab-orb"></div>
+          <div class="container">
+            <div class="section-heading reveal">
+              <p class="eyebrow">Ideas Lab</p>
+              <h2 id="lab-title">
+                Things that
+                <span>could exist</span>
+              </h2>
+              <p class="section-copy">
+                Speculative features for products I love. Some practical, some
+                playful, all exploring what's possible.
+              </p>
+            </div>
+
+            <div class="lab-grid">
+              <article class="lab-card reveal">
+                <div class="lab-top">
+                  <span class="tag tag-red">Wild Idea</span>
+                  <span class="lab-arrow">↗</span>
+                </div>
+                <h3>What if Spotify had a 'vibe shift' detector?</h3>
+                <p>
+                  AI that notices when your music taste changes and creates a
+                  playlist timeline of your life phases
+                </p>
+              </article>
+
+              <article class="lab-card reveal reveal-delay">
+                <div class="lab-top">
+                  <span class="tag tag-teal">Feature Concept</span>
+                  <span class="lab-arrow">↗</span>
+                </div>
+                <h3>Figma comments that fade over time</h3>
+                <p>
+                  Design feedback that becomes less visible as it ages, keeping
+                  files clean while preserving history
+                </p>
+              </article>
+
+              <article class="lab-card reveal">
+                <div class="lab-top">
+                  <span class="tag tag-gold">Speculative</span>
+                  <span class="lab-arrow">↗</span>
+                </div>
+                <h3>Calendar that blocks off 'energy recovery' time</h3>
+                <p>
+                  Automatic buffer zones after draining meetings, learned from
+                  your patterns
+                </p>
+              </article>
+
+              <article class="lab-card reveal reveal-delay">
+                <div class="lab-top">
+                  <span class="tag tag-purple">Thought Experiment</span>
+                  <span class="lab-arrow">↗</span>
+                </div>
+                <h3>GitHub commits with emotional context</h3>
+                <p>
+                  Tag your commits with how you felt while writing the code. View
+                  the emotional journey of a project.
+                </p>
+              </article>
+
+              <article class="lab-card reveal">
+                <div class="lab-top">
+                  <span class="tag tag-red">Playful Idea</span>
+                  <span class="lab-arrow">↗</span>
+                </div>
+                <h3>Notion pages that change based on weather</h3>
+                <p>
+                  Your workspace aesthetic adapts to what's happening outside
+                  your window
+                </p>
+              </article>
+
+              <article class="lab-card reveal reveal-delay">
+                <div class="lab-top">
+                  <span class="tag tag-teal">Smart Feature</span>
+                  <span class="lab-arrow">↗</span>
+                </div>
+                <h3>Slack that knows when NOT to notify you</h3>
+                <p>
+                  Message importance prediction based on your response patterns
+                  and current context
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+
+
+        <section class="section section-muted" aria-labelledby="approach-title">
+          <div class="container">
+            <div class="section-heading reveal">
+              <p class="eyebrow">Approach</p>
+              <h2 id="approach-title">
+                How I
+                <span>explore &amp; create</span>
+              </h2>
+            </div>
+
+            <div class="capability-grid">
+              <article class="capability-card reveal capability-red">
+                <div class="capability-icon">✦</div>
+                <h3>Creative Exploration</h3>
+                <p>
+                  Experimenting with unconventional interfaces and interaction
+                  patterns that challenge standard UX norms
+                </p>
+              </article>
+
+              <article class="capability-card reveal capability-teal">
+                <div class="capability-icon">✳</div>
+                <h3>Generative Design</h3>
+                <p>
+                  Building experiences that use AI and algorithms to create
+                  dynamic, personalized visual systems
+                </p>
+              </article>
+
+              <article class="capability-card reveal capability-gold">
+                <div class="capability-icon">◫</div>
+                <h3>Product Concepts</h3>
+                <p>
+                  Imagining features and products that could exist for companies
+                  I admire, exploring what's possible
+                </p>
+              </article>
+
+              <article class="capability-card reveal capability-purple">
+                <div class="capability-icon">✎</div>
+                <h3>Micro-interactions</h3>
+                <p>
+                  Crafting delightful, unexpected moments of interaction that make
+                  digital products feel alive
+                </p>
+              </article>
+
+              <article class="capability-card reveal capability-red">
+                <div class="capability-icon">➜</div>
+                <h3>Rapid Prototyping</h3>
+                <p>
+                  Moving from idea to working prototype quickly, testing concepts
+                  before investing deep
+                </p>
+              </article>
+
+              <article class="capability-card reveal capability-teal">
+                <div class="capability-icon">💡</div>
+                <h3>Alternative Thinking</h3>
+                <p>
+                  Questioning assumptions about how products should work and
+                  exploring different mental models
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="about" aria-labelledby="about-title">
+          <div class="about-orb"></div>
+          <div class="container about-grid">
+            <div class="section-heading reveal">
+              <p class="eyebrow">About</p>
+              <h2 id="about-title">
+                Why this
+                <span>exists</span>
+              </h2>
+            </div>
+
+            <div class="about-columns reveal reveal-delay">
+              <div class="about-column">
+                <p>
+                  By day, I work as a Product Manager. By night (and weekends), I
+                  explore ideas that don't fit neatly into roadmaps or OKRs.
+                </p>
+                <p>
+                  This is my creative outlet. A place to experiment with
+                  unconventional interfaces, imagine features for products I
+                  admire, and build things just because they're interesting.
+                </p>
+                <p>
+                  Some of these projects are functional prototypes. Others are
+                  purely conceptual. All of them represent ways of thinking
+                  differently about digital products.
+                </p>
+                <p class="about-cta">
+                  If you're into creative experimentation, want to collaborate on
+                  something weird, or just want to chat about speculative product
+                  ideas — let's connect.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+          <div class="container">
+            <div class="contact-heading reveal">
+              <p class="eyebrow contact-eyebrow">Let's collaborate</p>
+              <h2 id="contact-title">
+                <span>Let's build something</span>
+              </h2>
+              <p class="section-copy contact-copy">
+                Got a wild idea? Want to collaborate on something experimental?
+                Just want to chat about speculative product concepts? I'm all
+                ears.
+              </p>
+            </div>
+
+            <div class="contact-grid">
+              <div class="contact-info reveal">
+                <h3>Get in touch</h3>
+
+                <a class="contact-link" href="mailto:aarroyo.mba2026@london.edu">
+                  <span class="contact-icon icon-red">✉</span>
+                  <span>
+                    <small>Email</small>
+                    <strong>aarroyo.mba2026@london.edu</strong>
+                  </span>
+                </a>
+
+                <a class="contact-link" href="https://www.linkedin.com/in/andrea-arroyo-aranibar/" target="_blank" rel="noreferrer">
+                  <span class="contact-icon icon-red">in</span>
+                  <span>
+                    <small>LinkedIn</small>
+                    <strong>linkedin.com/in/andrea-arroyo-aranibar</strong>
+                  </span>
+                </a>
+
+                <a
+                  class="contact-link"
+                  href="mailto:aarroyo.mba2026@london.edu?subject=Resume%20request"
+                >
+                  <span class="contact-icon icon-red">CV</span>
+                  <span>
+                    <small>Resume</small>
+                    <strong>Available on request</strong>
+                  </span>
+                </a>
+
+                <div class="contact-list">
+                  <p>Perfect if you want to:</p>
+                  <ul>
+                    <li>Collaborate on experimental projects</li>
+                    <li>Discuss speculative product ideas</li>
+                    <li>Share creative concepts</li>
+                    <li>Just chat about interesting product stuff</li>
+                  </ul>
+                </div>
+              </div>
+
+              <form class="contact-form reveal reveal-delay">
+                <h3>Send a message</h3>
+                <label>
+                  Name
+                  <input type="text" name="name" placeholder="Your name" required />
+                </label>
+                <label>
+                  Email
+                  <input type="email" name="email" placeholder="your@email.com" required />
+                </label>
+                <label>
+                  Message
+                  <textarea
+                    name="message"
+                    rows="6"
+                    placeholder="Tell me about your project or opportunity..."
+                    required
+                  ></textarea>
+                </label>
+                <button class="button button-primary button-full" type="submit">
+                  Send message
+                  <span aria-hidden="true">➜</span>
+                </button>
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container footer">
+          <p>Made with curiosity &amp; late nights</p>
+          <div class="footer-links">
+            <a href="https://www.linkedin.com/in/andrea-arroyo-aranibar/" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a href="mailto:aarroyo.mba2026@london.edu">Email</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
