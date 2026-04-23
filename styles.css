@@ -220,10 +220,6 @@ h2 span,
 .about-column p,
 .lab-card p,
 .contact-copy,
-.contact-list p,
-.contact-list li {
-  color: rgba(26, 26, 26, 0.7);
-}
 
 .hero-text {
   max-width: 690px;
@@ -338,6 +334,12 @@ h2 {
   margin-top: 1.5rem;
   font-size: 1.25rem;
   line-height: 1.6;
+}
+
+.contact-copy {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .project-brand {
@@ -520,9 +522,6 @@ h2 {
 .capability-card p,
 .lab-card p,
 .about-column p,
-.contact-list li {
-  line-height: 1.7;
-}
 
 .project-meta {
   display: flex;
@@ -773,37 +772,8 @@ h2 {
 
 .contact-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 3rem 4rem;
-}
-
-.contact-info {
-  display: grid;
-  gap: 1.5rem;
-}
-
-.contact-link {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  padding: 1rem;
-  border-radius: 14px;
-  transition: transform var(--ease), background var(--ease);
-}
-
-.contact-link:hover {
-  transform: translateX(4px);
-  background: rgba(245, 244, 241, 0.7);
-}
-
-.contact-icon {
-  display: grid;
-  place-items: center;
-  width: 48px;
-  height: 48px;
-  border-radius: 12px;
-  font-size: 0.95rem;
-  font-weight: 700;
+  gap: 2rem;
+  justify-items: center;
 }
 
 .icon-red {
@@ -811,25 +781,44 @@ h2 {
   color: var(--red);
 }
 
-.contact-link small {
-  display: block;
-  margin-bottom: 0.2rem;
+.contact-actions {
+  width: 100%;
+  max-width: 920px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.contact-action-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding: 1rem 1.1rem;
+  border-radius: 16px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  transition: transform var(--ease), box-shadow var(--ease), background var(--ease);
+}
+
+.contact-action-card:hover,
+.contact-action-card:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-soft);
+}
+
+.contact-action-card small {
   color: var(--muted);
+  font-size: 0.82rem;
 }
 
-.contact-list {
-  padding-top: 2rem;
-  border-top: 1px solid var(--line);
+.contact-action-card strong {
+  font-size: 0.98rem;
+  line-height: 1.35;
 }
 
-.contact-list p {
-  margin: 0 0 0.75rem;
-  font-size: 0.95rem;
-}
-
-.contact-list ul {
-  margin: 0;
-  padding-left: 1.1rem;
+.contact-form-centered {
+  width: 100%;
+  max-width: 760px;
 }
 
 .contact-form {
@@ -1011,5 +1000,11 @@ h2 {
   .reveal {
     opacity: 1;
     transform: none;
+  }
+}
+
+@media (max-width: 760px) {
+  .contact-actions {
+    grid-template-columns: 1fr;
   }
 }
