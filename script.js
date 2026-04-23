@@ -32,3 +32,12 @@ if (form) {
     event.preventDefault();
   });
 }
+
+const emailInput = document.querySelector('.contact-form input[name="email"]');
+const replyToInput = document.querySelector('.contact-form input[name="_replyto"]');
+    
+  if (emailInput && replyToInput) {
+    emailInput.addEventListener('input', () => {
+      replyToInput.value = emailInput.value.trim();
+    });
+  }      
