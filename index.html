@@ -16,6 +16,18 @@
     />
     <link rel="stylesheet" href="./styles.css" />
   </head>
+
+  <script>
+    const emailInput = document.querySelector('.contact-form input[name="email"]');
+    const replyToInput = document.querySelector('.contact-form input[name="_replyto"]');
+  
+    if (emailInput && replyToInput) {
+      emailInput.addEventListener('input', () => {
+        replyToInput.value = emailInput.value.trim();
+      });
+    }
+  </script>
+
   <body>
     <div class="site-shell">
       <header class="site-header" id="top">
@@ -436,52 +448,74 @@
 
             <div class="contact-grid">
               <div class="contact-actions reveal">
-                <a class="contact-action-card" href="mailto:aarroyo.mba2026@london.edu">
-                  <small>Email</small>
-                  <strong>aarroyo.mba2026@london.edu</strong>
-                </a>
-            
                 <a
-                  class="contact-action-card"
+                  class="contact-action-pill"
                   href="https://www.linkedin.com/in/andrea-arroyo-aranibar/"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <small>LinkedIn</small>
-                  <strong>View my background</strong>
+                  <img src="./assets/linkedin-logo.png" alt="LinkedIn" />
+                  <span>Background</span>
                 </a>
-            
+              
+                <a class="contact-action-pill" href="mailto:aarroyo.mba2026@london.edu">
+                  <img src="./assets/email-icon.png" alt="  Email  " />
+                  <span>Email</span>
+                </a>
+              
                 <a
-                  class="contact-action-card"
+                  class="contact-action-pill"
                   href="mailto:aarroyo.mba2026@london.edu?subject=Resume%20request"
                 >
-                  <small>Resume</small>
-                  <strong>Available on request</strong>
+                  <img src="./assets/resume-icon.png" alt="Resume" />
+                  <span>Resume</span>
                 </a>
               </div>
             
-              <form class="contact-form contact-form-centered reveal reveal-delay">
+              <form
+                class="contact-form contact-form-centered reveal reveal-delay"
+                action="https://formspree.io/f/mrerrowj"
+                method="POST"
+              >
+
                 <label>
                   Name
                   <input type="text" name="name" placeholder="Your name" required />
                 </label>
+
                 <label>
                   Email
                   <input type="email" name="email" placeholder="your@email.com" required />
                 </label>
+
+                <label>
+                  Subject
+                  <input
+                    type="text"
+                    name="subject"
+                    placeholder="Hiring, consulting, collaboration..."
+                  />
+                </label>
+
                 <label>
                   Message
                   <textarea
                     name="message"
                     rows="6"
-                    placeholder="Tell me about your project or opportunity..."
+                    placeholder="Tell me about the role, project, or opportunity..."
                     required
                   ></textarea>
                 </label>
+
+                <input type="hidden" name="_subject" value="New portfolio message" />
+                <input type="hidden" name="_replyto" value="" />
+
                 <button class="button button-primary button-full" type="submit">
                   Send message
                   <span aria-hidden="true">➜</span>
                 </button>
+
+                <p class="form-note">I usually reply by email.</p>
               </form>
             </div>
           </div>
