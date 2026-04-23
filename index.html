@@ -17,17 +17,6 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
 
-  <script>
-    const emailInput = document.querySelector('.contact-form input[name="email"]');
-    const replyToInput = document.querySelector('.contact-form input[name="_replyto"]');
-  
-    if (emailInput && replyToInput) {
-      emailInput.addEventListener('input', () => {
-        replyToInput.value = emailInput.value.trim();
-      });
-    }
-  </script>
-
   <body>
     <div class="site-shell">
       <header class="site-header" id="top">
@@ -534,5 +523,17 @@
     </div>
 
     <script src="./script.js"></script>
+
+    <script>
+      const emailInput = document.querySelector('.contact-form input[name="email"]');
+      const replyToInput = document.querySelector('.contact-form input[name="_replyto"]');
+    
+      if (emailInput && replyToInput) {
+        emailInput.addEventListener('input', () => {
+          replyToInput.value = emailInput.value.trim();
+        });
+      }
+    </script>
+
   </body>
 </html>
